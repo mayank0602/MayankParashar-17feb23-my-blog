@@ -1,14 +1,10 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "extends": "./tsconfig.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/app",
+    "outDir": "../out-tsc/app",
+    "module": "es2015",
     "types": []
   },
-  "files": [
-    "src/main.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ]
+  "exclude": ["src/test.ts", "**/*.spec.ts"],
+  "include": ["**/*.ts", "../node_modules/angular-bootstrap-md/index.ts"]
 }
